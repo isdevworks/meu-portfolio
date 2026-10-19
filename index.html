@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Tech IS Dev Works</title>
+    <title>Ícaro Souza | Fullstack & DevOps</title>
+    <!-- Fontes Modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo1.png">
@@ -11,8 +16,8 @@
 <body>
     <nav>
         <div class="logo">
-        <img src="logo1.png" alt="Logo IS DevWorks">
-    </div>
+            <img src="logo1.png" alt="Logo IS DevWorks">
+        </div>
         <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -23,11 +28,11 @@
 
     <header class="hero">
         <div class="hero-content">
-            <h1 id="typing-text"></h1> 
-            <p class="subtitle">Sistemas de Informação | Infraestrutura | Front End</p>
+            <h1 id="typing-text" class="gradient-text"></h1> 
+            <p class="subtitle">Desenvolvedor Fullstack | Infraestrutura & DevOps</p>
             <div class="hero-btns">
                 <button class="btn-primary" onclick="scrollParaSobre()">
-                    <i class="fas fa-chevron-down"></i> Conhecer mais
+                    <i class="fas fa-chevron-down"></i> Conhecer meu trabalho
                 </button>
             </div>
         </div>
@@ -35,77 +40,95 @@
 
     <section id="sobre" class="container">
         <div class="glass-card">
-            <h2><i class="fas fa-user-tie"></i> Sobre Mim</h2>
+            <h2><i class="fas fa-terminal"></i> Sobre Mim</h2>
             <div class="sobre-conteudo">
                 <p>
-                    Sou um profissional de tecnologia focado em soluções integradas. 
-                    Tenho 3 anos de experiência como Analista de Infraestrutura, dominando servidores e redes, 
-                    e 2 anos como Desenvolvedor Front-End Júnior focado em pequenos e medios projetos.
+                    Sou um <strong>Desenvolvedor Fullstack</strong> apaixonado por criar soluções ponta a ponta. 
+                    Construo desde interfaces web modernas e responsivas no Front-End até APIs escaláveis e seguras no Back-End. 
+                </p>
+                <p style="margin-top: 15px;">
+                    Com uma sólida base de 3 anos em <strong>Infraestrutura e Redes</strong>, não apenas escrevo código, mas entendo profundamente como ele roda nos servidores. Meu objetivo é unir o desenvolvimento de software a automações eficientes.
                 </p>
             </div>
         </div>
     </section>
 
     <section id="skills" class="container bg-alt">
-        <h2 class="section-title">Habilidades Técnicas</h2>
+        <h2 class="section-title">Stack Tecnológico</h2>
         <div class="skill-grid">
+            
+            <!-- Front-End -->
             <div class="skill-card">
                 <div class="card-header">
-                    <i class="fas fa-server"></i>
-                    <h3>Infraestrutura & Redes</h3>
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Front-End</h3>
                 </div>
                 <div class="card-body">
-                    <span>Windows Server</span>
-                    <span>Hyper-V</span>
-                    <span>Linux</span>
-                    <span>Mikrotik</span>
-                    <span>Firewall</span>
-                    <span>Monitoramento</span>
-                    <span>Redes Lógicas</span>
+                    <span>React.js</span>
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>HTML5 / CSS3</span>
+                    <span>UI/UX Design</span>
                 </div>
             </div>
 
+            <!-- Back-End -->
             <div class="skill-card">
                 <div class="card-header">
-                    <i class="fas fa-code"></i>
-                    <h3>Desenvolvimento & Automação</h3>
+                    <i class="fas fa-database"></i>
+                    <h3>Back-End & Dados</h3>
                 </div>
                 <div class="card-body">
-                    <span>HTML / CSS</span>
-                    <span>JavaScript</span>
-                    <span>PowerShell Scripts</span>
-                    <span>Java Básico</span>
-                    <span>C#</span>
-                    <span>GitHub</span>
+                    <span>Node.js</span>
+                    <span>APIs RESTful</span>
+                    <span>SQL Server</span>
+                    <span>MySQL / PostgreSQL</span>
+                    <span>C# / Java</span>
                 </div>
             </div>
+
+            <!-- Infra e DevOps -->
+            <div class="skill-card">
+                <div class="card-header">
+                    <i class="fas fa-server"></i>
+                    <h3>Infra</h3>
+                </div>
+                <div class="card-body">
+                    <span>Windows Server</span>
+                    <span>Linux</span>
+                    <span>PowerShell / Scripts</span>
+                    <span>Redes & Segurança</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="servicos" class="container">
-        <h2 class="section-title">O que posso fazer por você</h2>
+        <h2 class="section-title">O que eu entrego</h2>
         <div class="skill-grid">
             <div class="glass-card service-item">
-                <i class="fas fa-network-wired fa-2x"></i>
-                <h3>Consultoria em Infra</h3>
-                <p>Planejamento de redes, configuração de servidores e segurança de borda.</p>
+                <i class="fas fa-code fa-2x gradient-icon"></i>
+                <h3>Aplicações Web Completas</h3>
+                <p>Desenvolvimento de sistemas web escaláveis, unindo um Front-End dinâmico com um Back-End robusto.</p>
             </div>
             <div class="glass-card service-item">
-                <i class="fas fa-laptop-code fa-2x"></i>
-                <h3>Desenvolvimento Web</h3>
-                <p>Criação de landing pages e sites institucionais modernos e responsivos.</p>
+                <i class="fas fa-cogs fa-2x gradient-icon"></i>
+                <h3>APIs e Integrações</h3>
+                <p>Criação de APIs REST para conectar diferentes sistemas, garantindo fluxo de dados rápido e seguro.</p>
             </div>
             <div class="glass-card service-item">
-                <i class="fas fa-robot fa-2x"></i>
-                <h3>Automação de Processos</h3>
-                <p>Scripts em PowerShell para automação de backups e rotinas de TI.</p>
+                <i class="fas fa-cloud fa-2x gradient-icon"></i>
+                <h3>Infraestrutura & Automação</h3>
+                <p>Configuração de servidores, containerização (Docker) e automação de rotinas para garantir alta disponibilidade.</p>
             </div>
         </div>
     </section>
 
     <footer id="contato">
         <div class="footer-content">
-            <h3>Vamos trabalhar juntos?</h3>
+            <h2 class="gradient-text">Vamos construir algo incrível?</h2>
+            <p style="margin-bottom: 20px; opacity: 0.8;">Estou disponível para novos projetos e oportunidades.</p>
             <div class="social-links">
                 <a href="https://github.com/icaro-du" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 <a href="https://linkedin.com/in/icaroeduardotech" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
