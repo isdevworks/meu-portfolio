@@ -1,5 +1,5 @@
 // Configurações Globais
-const phrase = "Olá, me chamo Ícaro Souza, Bem Vindo !";
+const phrase = "Olá, sou Ícaro Souza.";
 let index = 0;
 
 // 1. Efeito de Digitação (Typewriter)
@@ -8,7 +8,7 @@ function type() {
     if (textElement && index < phrase.length) {
         textElement.innerHTML += phrase.charAt(index);
         index++;
-        setTimeout(type, 100); // Velocidade da digitação
+        setTimeout(type, 120); // Velocidade da digitação um pouco mais natural
     }
 }
 
@@ -17,8 +17,6 @@ function scrollParaSobre() {
     const sobreSection = document.getElementById('sobre');
     if (sobreSection) {
         sobreSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-        console.warn("Seção #sobre não encontrada no HTML.");
     }
 }
 
@@ -29,29 +27,29 @@ function reveal() {
     reveals.forEach(element => {
         const windowHeight = window.innerHeight;
         const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150; 
+        const elementVisible = 100; // Começa a revelar um pouco mais cedo
         
         if (elementTop < windowHeight - elementVisible) {
             element.style.opacity = "1";
             element.style.transform = "translateY(0)";
-            element.style.transition = "all 0.8s ease-out";
+            element.style.transition = "all 0.6s cubic-bezier(0.5, 0, 0, 1)";
         }
     });
 }
 
-// 4. Inicialização Segura
+// 4. Inicialização
 window.addEventListener('DOMContentLoaded', () => {
-    // Inicia o efeito de digitação
-    type();
+    // Inicia o efeito de digitação com um leve delay
+    setTimeout(type, 500);
     
     // Configura o estado inicial invisível para as animações de scroll
     const cards = document.querySelectorAll('.skill-card, .glass-card');
     cards.forEach(c => {
         c.style.opacity = "0";
-        c.style.transform = "translateY(30px)";
+        c.style.transform = "translateY(40px)";
     });
     
-    // Verifica se há scroll inicial (caso o usuário dê F5 no meio da página)
+    // Verifica se há scroll inicial
     reveal();
 });
 
